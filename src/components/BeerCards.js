@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
-import Beers from "./Beers";
 
 const BeerCards = props => {
   return (
