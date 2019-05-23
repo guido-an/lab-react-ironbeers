@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import Home from "./components/Home";
-import { BrowserRouter as Router } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
 import Beers from "./components/Beers.jsx";
 import RandomBeer from './components/RandomBeer'
 import NewBeer from './components/NewBeer'
+import BeerDetail from './components/BeerDetail'
 
 function App() {
   return (
@@ -13,8 +13,10 @@ function App() {
     
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/beers" component={Beers} />
+      <Route exact path="/beers" component={Beers} />
       <Route path="/random-beer" component={RandomBeer} />
+      <Route path="/new-beer" component={NewBeer} />
+      <Route path="/beers/:_id" component={BeerDetail} />
       <Route path="/new-beer" component={NewBeer} />
       </Switch>
     </div>

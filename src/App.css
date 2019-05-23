@@ -5,3 +5,16 @@
     background-color: #4bc4fb;
     height: 100px
 }
+.beer-container{
+    border-bottom: 2px solid #fafafa;
+    padding: 20px
+}
+.beer-container img{
+   width: 50px
+}
+.beer-container h3{
+    color: #777
+}
+.beer-container span {
+   font-size: 14px
+}
