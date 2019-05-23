@@ -39,7 +39,7 @@ export default class Beers extends Component {
     
     const beers = this.state.beers;
     const beersList = beers.length ? (
-      beers.filter(beer => beer.name.startsWith(this.state.filter)).map((beer, index) => {   // when the filter is empty display all the beers, otherwise start filtering according to the search value
+      beers.filter(beer => beer.name.toLowerCase().startsWith(this.state.filter)).map((beer, index) => {   // when the filter is empty display all the beers, otherwise start filtering according to the search value
           return <div key={index} className="beer-container">
               <img src={beer.image_url} alt={beer.image_url}/>
               <h2>{beer.name}</h2>
